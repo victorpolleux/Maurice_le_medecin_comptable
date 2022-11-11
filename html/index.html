@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <meta name="copyright" content="MACode ID, https://macodeid.com/">
+
+  <title>Maurice analyse ma compta.fr</title>
+
+  <link rel="stylesheet" href="../assets/css/maicons.css">
+
+  <link rel="stylesheet" href="../assets/css/bootstrap.css">
+
+  <link rel="stylesheet" href="../assets/vendor/animate/animate.css">
+
+  <link rel="stylesheet" href="../assets/css/theme.css">
+
+</head>
+<body>
+
+  <!-- Back to top button -->
+  <div class="back-to-top"></div>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky" data-offset="500">
+      <div class="container">
+        <a href="index.html" class="navbar-brand">Maurice analyse <span class="text-primary"> ma compta.fr</span></a>
+
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="navbar-collapse collapse" id="navbarContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Cabinet</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">Qui est Maurice ?</a>
+            </li>
+            <!--<li class="nav-item">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li> -->
+            <li class="nav-item">
+                <a class="nav-link" href="indicateurs.html">Indicateurs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-primary ml-lg-2" href="#about">Analyser </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="page-banner home-banner">
+        <div class="row align-items-center flex-wrap-reverse h-100">
+          <div class="col-md-6 py-5 wow fadeInLeft">
+            <h1 class="mb-4">Analysez votre bilan et compte de résultat gratuitement en quelques minutes avec Maurice !</h1>
+            <p class="text-lg text-grey mb-5">Bonjour et bienvenue dans mon cabinet, je suis <strong> Maurice le médecin-comptable </strong> ! Nous allons faire ensemble un rapide diagnostic de votre entreprise afin de voir son niveau de santé. Veuillez cliquer sur le bouton ci-dessous pour débuter.</p>
+            <a href="#about" data-role="smoothscroll" class="btn btn-primary btn-split">Commencer <div class="fab"><span class="mai-play"></span></div></a>
+          </div>
+          <div class="col-md-6 py-5 wow zoomIn">
+            <div class="img-fluid text-center">
+              <img src="../assets/img/doctor3.png" alt="Image">
+            </div>
+          </div>
+        </div>
+        <!-- <a href="#about" class="btn-scroll" data-role="smoothscroll"><span class="mai-arrow-down"></span></a> -->
+      </div>
+    </div>
+  </header>
+  <!--
+  <div class="page-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="card-service wow fadeInUp">
+            <div class="header">
+              <img src="../assets/img/services/service-1.svg" alt="">
+            </div>
+            <div class="body">
+              <h5 class="text-secondary">SEO Consultancy</h5>
+              <p>We help you define your SEO objective & develop a realistic strategy with you</p>
+              <a href="service.html" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card-service wow fadeInUp">
+            <div class="header">
+              <img src="../assets/img/services/service-2.svg" alt="">
+            </div>
+            <div class="body">
+              <h5 class="text-secondary">Content Marketing</h5>
+              <p>We help you define your SEO objective & develop a realistic strategy with you</p>
+              <a href="service.html" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card-service wow fadeInUp">
+            <div class="header">
+              <img src="../assets/img/services/service-3.svg" alt="">
+            </div>
+            <div class="body">
+              <h5 class="text-secondary">Keyword Research</h5>
+              <p>We help you define your SEO objective & develop a realistic strategy with you</p>
+              <a href="service.html" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>  .container -->
+  </div> <!-- .page-section -->
+<form>
+  <div class="page-section" id="about">
+    <div class="container">
+      <div class="row align-items-center">
+      
+        <div class="col-lg-6 py-3 wow fadeInUp">
+          <strong><span class="subhead" style="width: 1100px; text-align: center; font-size: xx-large; ">Bilan</span></strong>
+          <!--<h2 class="title-section">Bilan</h2>-->
+          <!-- Bilan-->
+          
+           
+            <table>
+              <thead> <link href="theme.css"/>
+                <tr>
+                  <th><input type="text" disabled="disabled" value="Actif" class="subhead"></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th><input type="text" disabled="disabled" value="Passif" class="subhead"></th>
+                </tr>
+                <tr>
+                  <th><input type="text" disabled="disabled" value="Actif immobilisé" class="subhead" style="font-weight: 400; text-align: center;"></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th><input type="text" disabled="disabled" value="Capitaux propres" class="subhead" style="font-weight: 400; text-align: center; "></th>
+                </tr>
+                <tr>
+                  <th></th>
+                  <th>Brut</th>
+                  <th>Amortissements et dépréciations </th>
+                  <th></th>
+                </tr>
+                <tr>
+                  <td><textarea disabled="disabled" class="table-margin table-area" >Immobilisations corporelles</textarea></td>
+                  <td><input type="number" id="id1" value="0" class="table-input table-input-required table-value" style="margin-right: 20px;"/> </td>
+                  <td><input type="number" id="id2" value="0"class="table-input table-input-required table-value" style="margin-right: 120px;" /></td>
+                  <td></td>
+
+                  <td><textarea disabled="disabled" class="table-margin table-area" >Capital social et autres</textarea></td>
+                  <td><input type="number" id="id3" value="0" class="table-input table-input-required table-value"/> </td>
+                </tr>
+                <tr>
+                  <td><textarea disabled="disabled" class="table-margin table-area" >Immobilisations incorporelles</textarea></td>
+                  <td><input type="number" id="id4" value="0" class="table-input table-input-required table-value"/> </td>
+                  <td><input type="number" id="id5" value="0" class="table-input table-input-required table-value"/> </td>
+                  <td></td>
+
+                  <td><textarea disabled="disabled" class="table-margin table-area" >Réserves</textarea></td>
+                  <td><input type="number" id="id6" value="0" class="table-input table-input-required table-value"/> </td>
+                </tr>
+                <tr>
+                  <td><textarea disabled="disabled" class="table-margin table-area" >Immobilisations financières</textarea></td>
+                  <td><input type="number" id="id7" value="0" class="table-input table-input-required table-value"/> </td>
+                  <td><input type="number" id="id8" value="0" class="table-input table-input-required table-value"/> </td>
+                  <td></td>
+
+                  <td><textarea disabled="disabled" class="table-margin table-area" >Report des pertes antérieures</textarea></td>
+                  <td><input type="number" id="id23" value="0" class="table-input table-input-required table-value"/></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+
+                  <td><textarea disabled="disabled" class="table-margin table-area" >Provisions pour risques et charges</textarea></td>
+                  <td><input type="number" id="id10" value="0" class="table-input table-input-required table-value" /> </td>
+                </tr>
+                <tr>
+                  <th><input type="text" disabled="disabled" value="Actif circulant" class="subhead" style="font-weight: 400; text-align: center;"></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th><input type="text" disabled="disabled" value="Dettes" class="subhead" style="font-weight: 400; text-align: center;"></th>
+                </tr>
+                <tr>
+                  <th></th>
+                  <th>Brut </th>
+                  <th>Dépréciations</th>
+                 
+                  <th></th>
+                </tr>
+                <tr>
+                  <td><textarea disabled="disabled" class="table-margin table-area" >Stocks</textarea></td>
+                  <td><input type="number" id="id11" value="0" class="table-input table-input-required features table-value"/> </td>
+                  <td><input type="number" id="id12" value="0" class="table-input table-input-required table-value"/> </td>
+                  <td></td>
+                  <td><textarea disabled="disabled" class="table-margin table-area" >Emprunts bancaires</textarea></td>
+                  <td><input type="number" id="id13" value="0" class="table-input table-input-required table-value" /> </td>
+                </tr>
+                <tr>
+                  <td><textarea disabled="disabled" class="table-margin table-area" >Créances clients</textarea></td>
+                  <td><input type="number" id="id14" value="0" class="table-input table-input-required table-value"/> </td>
+                  <td><input type="number" id="id15" value="0" class="table-input table-input-required table-value"/> </td>
+                  <td></td>
+
+                  <td><textarea disabled="disabled" class="table-margin table-area" >Comptes courants d'associés</textarea></td>
+                  <td><input type="number" id="id16" value="0" class="table-input table-input-required table-value"/> </td>
+                </tr>
+                <tr>
+                  <td><textarea disabled="disabled" class="table-margin table-area" >Créances diverses</textarea></td>
+                  <td><input type="number" id="id17" value="0" class="table-input table-input-required table-value" /></td>
+                  <td><input type="number" id="id25" value="0" class="table-input table-input-required table-value" /></td>
+                  <td></td>
+
+                  <td><textarea disabled="disabled" class="table-margin table-area" >Dettes fournisseurs</textarea></td>
+                  <td><input type="number" id="id18" value="0" class="table-input table-input-required table-value"/> </td>
+                </tr>
+                <tr>
+                  <td><textarea disabled="disabled" class="table-margin table-area" >Valeurs mobilières de placement</textarea></td>
+                  <td><input type="number" id="id19" value="0" class="table-input table-input-required table-value" /></td>
+                  <td><input type="number" id="id24" value="0" class="table-input table-input-required table-value" /></td>
+                  <td></td>
+
+                  <td><textarea disabled="disabled" class="table-margin table-area" >Dettes fiscales et sociales</textarea></td>
+                  <td><input type="number" id="id20" value="0" class="table-input table-input-required table-value" /> </td>
+                </tr>
+                <tr>
+                  <td><textarea disabled="disabled" class="table-margin table-area" >Disponibilités</textarea></td>
+                  <td><input type="number" id="id21" value="0" class="table-input table-input-required table-value"></td>
+                  <td></td>
+                  <td></td>
+
+                  <td><textarea disabled="disabled" class="table-margin table-area" >Dettes diverses</textarea></td>
+                  <td><input type="number" id="id22" value="0" class="table-input table-input-required table-value"/> </td>
+                </tr>
+                <tr>
+                  <td><textarea disabled="disabled" class="table-margin table-area" >Charges constatées d'avance</textarea></td>
+                  <td><input type="number" id="id26" value="0" class="table-input table-input-required table-value"></td>
+                  <td></td>
+                  <td></td>
+
+                  <td><textarea disabled="disabled" class="table-margin table-area" >Produits constatés d'avance</textarea></td>
+                  <td><input type="number" id="id27" value="0" class="table-input table-input-required table-value"/> </td>
+                </tr>
+              </thead>
+            </table>
+
+            <!-- Compte de résultat -->
+            <strong><span class="subhead" style="width: 1100px; text-align: center; font-size: xx-large; margin-top: 50px; margin-bottom: 50px; ">Compte de résultat</span></strong>
+          
+            <table>
+              <thead> <link href="theme.css"/>
+                <tr>
+                  <th><input type="text" disabled="disabled" value="Charges" class="subhead" ></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th><input type="text" disabled="disabled" value="Produits" class="subhead"></th>
+                </tr>
+                <tr>
+                  <th><input type="text" disabled="disabled" value="exploitation" class="subhead" style="font-weight: 400; text-align: center;"></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th><input type="text" disabled="disabled" value="exploitation" class="subhead" style="font-weight: 400; text-align: center; "></th>
+                </tr>
+                <tr>
+                  <td><textarea disabled="disabled" class="table-margin table-area" >Achat de matières premières, marchandises</textarea></td>
+                  <td><input type="number" id="idcr1" value="0" class="table-input table-input-required table-value" style="margin-right: 180px;"/> </td>
+                  <td></td>
+                  <td></td>
+
+                  <td><textarea disabled="disabled" class="table-margin table-area" >Chiffre d'affaires</textarea></td>
+                  <td><input type="number" id="idcr2" value="0" class="table-input table-input-required table-value"/> </td>
+                </tr>
+                <tr>
+                  <td><textarea disabled="disabled" class="table-margin table-area" style="height: 90px;" >Variations de stocks de matières premières, marchandises</textarea></td>
+                  <td><input type="number" id="idcr3" value="0" class="table-input table-input-required table-value"/> </td>
+                  <td></td>
+                  <td></td>
+
+                  <td><textarea disabled="disabled" class="table-margin table-area" >Production immobilisée, stockée</textarea></td>
+                  <td><input type="number" id="idcr4" value="0" class="table-input table-input-required table-value"/> </td>
+                </tr>
+                <tr>
+                  <td><textarea disabled="disabled" class="table-margin table-area" >Autres achats et charges externes</textarea></td>
+                  <td><input type="number" id="idcr5" value="0" class="table-input table-input-required table-value"/> </td>
+                  <td></td>
+                  <td></td>
+
+                  <td><textarea disabled="disabled" class="table-margin table-area" >Subventions</textarea></td>
+                  <td><input type="number" id="idcr6" value="0" class="table-input table-input-required table-value"/> </td>
+                </tr>
+                <tr>
+                  <td><textarea disabled="disabled" class="table-margin table-area" >Impôts et taxes</textarea></td>
+                  <td><input type="number" id="idcr7" value="0" class="table-input table-input-required table-value"/> </td>
+                  <td></td>
+                  <td></td>
+
+                  <td><textarea disabled="disabled" class="table-margin table-area" style="height: 80px;" >Reprises sur amortissement et provision</textarea></td>
+                  <td><input type="number" id="idcr8" value="0" class="table-input table-input-required table-value"/> </td>
+                </tr>
+                <tr>
+                  <td><textarea disabled="disabled" class="table-margin table-area" >Salaires et charges sociales</textarea></td>
+                  <td><input type="number" id="idcr9" value="0" class="table-input table-input-required table-value"/> </td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td><textarea disabled="disabled" class="table-margin table-area" >Dotations sur amortissement</textarea></td>
+                  <td><input type="number" id="idcr10" value="0" class="table-input table-input-required table-value"/> </td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td><textarea disabled="disabled" class="table-margin table-area" >Dotations sur dépréciations</textarea></td>
+                  <td><input type="number" id="idcr18" value="0" class="table-input table-input-required table-value"/> </td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th><input type="text" disabled="disabled" value="financières" class="subhead" style="font-weight: 400; text-align: center;"></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th><input type="text" disabled="disabled" value="financiers" class="subhead" style="font-weight: 400; text-align: center;"></th>
+                </tr>
+                <tr>
+                  <td><textarea disabled="disabled" class="table-margin table-area" >Intérêts des emprunts, frais financiers</textarea></td>
+                  <td><input type="number" id="idcr11" value="0" class="table-input table-input-required features table-value"/> </td>
+                  <td></td>
+                  <td></td>
+
+
+                  <td><textarea disabled="disabled" class="table-margin table-area" >Autres intérêts, produits des titres</textarea></td>
+                  <td><input type="number" id="idcr12" value="0" class="table-input table-input-required table-value" /> </td>
+                </tr>
+                <tr>
+                  <th><input type="text" disabled="disabled" value="exceptionnelles" class="subhead" style="font-weight: 400; text-align: center;"></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th><input type="text" disabled="disabled" value="exceptionnels" class="subhead" style="font-weight: 400; text-align: center;"></th>
+                </tr>
+                <tr>
+                  <td><textarea disabled="disabled" class="table-margin table-area" >Opérations de gestion</textarea></td>
+                  <td><input type="number" id="idcr13" value="0" class="table-input table-input-required features table-value"/> </td>
+                  <td></td>
+                  <td></td>
+
+                  <td><textarea disabled="disabled" class="table-margin table-area" >Opérations de gestion</textarea></td>
+                  <td><input type="number" id="idcr14" value="0" class="table-input table-input-required table-value" /> </td>
+                </tr>
+                <tr>
+                  <td><textarea disabled="disabled" class="table-margin table-area" >Valeur comptable des actifs cédés </textarea></td>
+                  <td><input type="number" id="idcr15" value="0" class="table-input table-input-required features table-value"/> </td>
+                  <td></td>
+                  <td></td>
+                  <td><textarea disabled="disabled" class="table-margin table-area" >Produits des cessions d'actifs</textarea></td>
+                  <td><input type="number" id="idcr16" value="0" class="table-input table-input-required table-value" /> </td>
+                </tr>
+                <tr>
+                  <td><textarea disabled="disabled" class="table-margin table-area" > Impôts des sociétés</textarea></td>
+                  <td><input type="number" id="idcr17" value="0" class="table-input table-input-required table-value" /> </td>
+                </tr>
+
+              </thead>
+            </table>
+          
+          <script type="text/javascript">
+            
+            function Calcul_BFR(){ /* Créances + stocks - dettes - dépréciations */
+              document.getElementById('id001').value = /* Créances et stocks*/(Number(document.getElementById('id11').value) + Number(document.getElementById('id14').value) + Number(document.getElementById('id17').value)) - /* Dettes et dépréciations*/ (Number(document.getElementById('id15').value) + Number(document.getElementById('id16').value) + Number(document.getElementById('id18').value) + Number(document.getElementById('id20').value) + Number(document.getElementById('id22').value) + Number(document.getElementById('id23').value) ) ; 
+              document.getElementById('BFR').innerHTML = document.getElementById('id001').value;
+            };
+
+            function Calcul_FRNG(){ /* On ne prend pas en compte les CCA bloqués, pour les dettes financières sup à 1 an on part du principe qu'il s'agisse des emprunts bancaires */
+              document.getElementById('id003').value = Number(document.getElementById('id3').value) + Number(document.getElementById('id6').value) + Number(document.getElementById('id13').value) + Number(document.getElementById('id10').value) + Number(document.getElementById('id2').value) + Number(document.getElementById('id5').value) + Number(document.getElementById('id8').value) + Number(document.getElementById('idcr2').value) + Number(document.getElementById('idcr4').value) + Number(document.getElementById('idcr6').value) + Number(document.getElementById('idcr8').value) + Number(document.getElementById('idcr12').value) + Number(document.getElementById('idcr14').value) + Number(document.getElementById('idcr16').value) - Number(document.getElementById('idcr1').value) - Number(document.getElementById('idcr3').value) - Number(document.getElementById('idcr5').value) - Number(document.getElementById('idcr7').value) - Number(document.getElementById('idcr9').value) - Number(document.getElementById('idcr11').value) - Number(document.getElementById('idcr13').value) - Number(document.getElementById('idcr15').value) - Number(document.getElementById('idcr17').value) - Number(document.getElementById('id1').value) - Number(document.getElementById('id4').value) - Number(document.getElementById('id7').value);
+              document.getElementById('FRNG').innerHTML = document.getElementById('id003').value;  
+            };
+            
+            function Calcul_Cap_endett(){/* Capitaux propres - endettement net */
+              document.getElementById('id005').value = /*CP */ Number(document.getElementById('id3').value) + Number(document.getElementById('id6').value) +  Number(document.getElementById('idcr2').value) + Number(document.getElementById('idcr4').value) + Number(document.getElementById('idcr6').value) + Number(document.getElementById('idcr8').value) + Number(document.getElementById('idcr12').value) + Number(document.getElementById('idcr14').value) + Number(document.getElementById('idcr16').value) - (Number(document.getElementById('idcr1').value) + Number(document.getElementById('idcr3').value) + Number(document.getElementById('idcr5').value) + Number(document.getElementById('idcr7').value) + Number(document.getElementById('idcr9').value) + Number(document.getElementById('idcr11').value) + Number(document.getElementById('idcr13').value) + Number(document.getElementById('idcr15').value) + Number(document.getElementById('idcr17').value) /*Report */ - Number(document.getElementById("id23").value)) - /* Endettement net */ Number(document.getElementById('id13').value) + Number(document.getElementById('id16').value) - Number(document.getElementById('id19').value) - Number(document.getElementById('id21').value) ;
+              document.getElementById('Cap_End').innerHTML = document.getElementById('id005').value;
+            };
+
+            function Calcul_Endette_Net(){ /* selon compta facile => CCA + emprunts bancaires - VMP - Dispo */
+              document.getElementById('id004').value = Number(document.getElementById('id13').value) + Number(document.getElementById('id16').value) - Number(document.getElementById('id19').value) - Number(document.getElementById('id21').value) ;
+              document.getElementById('End_Net').innerHTML = document.getElementById('id004').value;
+            };
+
+            function Calcul_CAF(){ /* Il manque les QP sub virée au compte de résultat */
+              document.getElementById('id007').value = /*Résultat net */Number(document.getElementById('idcr2').value) + Number(document.getElementById('idcr4').value) + Number(document.getElementById('idcr6').value) + Number(document.getElementById('idcr8').value) + Number(document.getElementById('idcr12').value) + Number(document.getElementById('idcr14').value) + Number(document.getElementById('idcr16').value) - (Number(document.getElementById('idcr1').value) + Number(document.getElementById('idcr3').value) + Number(document.getElementById('idcr5').value) + Number(document.getElementById('idcr7').value) + Number(document.getElementById('idcr9').value) + Number(document.getElementById('idcr11').value) + Number(document.getElementById('idcr13').value) + Number(document.getElementById('idcr15').value) + Number(document.getElementById('idcr17').value)) + /* Dota. amort */Number(document.getElementById('idcr10').value) + /* 675*/Number(document.getElementById('idcr16').value) - /*775*/Number(document.getElementById('idcr17').value) - /*Reprises*/ Number(document.getElementById('idcr8').value);
+              document.getElementById('CAF').innerHTML = document.getElementById('id007').value;
+            };
+
+            function Calcul_Bénéfice(){ /* Calcul : CA + produits exploi fin et excep - les charges et IS */
+              document.getElementById('id006').value = /* Produits exploitation */Number(document.getElementById('idcr2').value) + Number(document.getElementById('idcr4').value) + Number(document.getElementById('idcr6').value) + Number(document.getElementById('idcr8').value) + /*Pdt financiers */Number(document.getElementById('idcr12').value) + /*pdt exceptionnels*/ Number(document.getElementById('idcr14').value) + Number(document.getElementById('idcr16').value) - /* Charges exploitation */(Number(document.getElementById('idcr1').value) + Number(document.getElementById('idcr3').value) + Number(document.getElementById('idcr5').value) + Number(document.getElementById('idcr7').value) + Number(document.getElementById('idcr9').value) + Number(document.getElementById('idcr10').value) /* Charges financières*/+ Number(document.getElementById('idcr11').value) + /*Charges exceptionnelles*/ Number(document.getElementById('idcr13').value) + Number(document.getElementById('idcr15').value) + /*IS*/Number(document.getElementById('idcr17').value) /*Report */ - Number(document.getElementById("id23").value));
+              document.getElementById('Ben').innerHTML = document.getElementById('id006').value;
+            };
+
+            function Taux_Vétusté(){ /* 1 - net/brut *100  - Immo corporelles */ 
+              document.getElementById("id002").value = Math.round((1-((Number(document.getElementById('id1').value) - (Number(document.getElementById('id2').value))) / Number(document.getElementById('id1').value)))*100);
+              document.getElementById('Vet').innerHTML = document.getElementById('id002').value;
+            };
+
+            function Calcul_Valeur_ets(){ /* CS + réserves + résultat net*/
+              document.getElementById('id008').value = /* cap social*/Number(document.getElementById('id3').value) +/*réserves*/ Number(document.getElementById('id6').value) + /*résultat net*/ Number(document.getElementById('idcr2').value) + Number(document.getElementById('idcr4').value) + Number(document.getElementById('idcr6').value) + Number(document.getElementById('idcr8').value) + Number(document.getElementById('idcr12').value) + Number(document.getElementById('idcr14').value) + Number(document.getElementById('idcr16').value) - (Number(document.getElementById('idcr1').value) + Number(document.getElementById('idcr3').value) + Number(document.getElementById('idcr5').value) + Number(document.getElementById('idcr7').value) + Number(document.getElementById('idcr9').value) + Number(document.getElementById('idcr11').value) + Number(document.getElementById('idcr13').value) + Number(document.getElementById('idcr15').value) + Number(document.getElementById('idcr17').value) /*Report */ - Number(document.getElementById("id23").value)) ;
+              document.getElementById('Val_Ets').innerHTML = document.getElementById('id008').value;
+            };
+
+            function Main(){
+                
+                Calcul_Bénéfice();  
+                Calcul_BFR();
+                Taux_Vétusté();
+                Calcul_Valeur_ets();
+                Calcul_CAF();
+                Calcul_Cap_endett();
+                Calcul_FRNG();
+                Calcul_Endette_Net();
+                
+            };
+
+          </script>
+
+   
+          <!--<div class="img-fluid py-3 text-center">
+            <img src="../assets/img/about_frame.png" alt="">
+          </div>-->
+        </div>
+        <div class="container text-center"> 
+          <div class="text-center wow fadeInUp" style="margin-top: 50px;">
+           <a href="#result" data-role="smoothscroll"><button type="button" class="btn btn-primary" onclick="Main();">Calculer</button></a>
+            <button type="reset" class="btn btn-primary">Réinitialiser</button>
+          </div>
+        </div>
+      
+
+      </div>
+    </div> <!-- .container -->
+  </div> <!-- .page-section -->
+
+  <div class="page-section bg-light" id="result">
+    <div class="container">
+      <div class="text-center wow fadeInUp">
+        <div class="subhead">Résultat</div>
+        <h2 class="title-section">Petit diagnostic de votre entreprise</h2>
+        <div class="divider mx-auto"></div>
+      </div>
+        <div class="row">
+          <div class="col-sm-6 col-lg-4 col-xl-3 py-3  wow zoomIn adjust-index" >
+            <div class="features" style="padding: 0px;">
+              <a href="indicateurs.html#FRNG">
+                <div class="header mb-3">
+                  <span class="mai-rocket"></span>
+                </div></a>
+              <h5>Fonds de roulement net global </h5>
+              <strong> <span id="FRNG"></span> €</strong>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 col-xl-3 py-3  wow zoomIn adjust-index" >
+            <div class="features">
+              <a href="indicateurs.html#cap_aut">
+                <div class="header mb-3">
+                  <span class="mai-briefcase"></span>
+                </div>
+              </a>
+              <h5>Capacité d'autofinancement </h5>
+              <strong> <span id="CAF"></span> €</strong>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 col-xl-3 py-3  wow zoomIn adjust-index" >
+            <div class="features">
+              <a href="indicateurs.html#cap_end">
+                <div class="header mb-3">
+                  <span class="mai-battery-half"></span>
+                </div>
+              </a>
+              <h5>Capacité d'endettement </h5>
+              <strong> <span id="Cap_End"></span> €</strong>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 col-xl-3 py-3  wow zoomIn adjust-index">
+            <div class="features">
+              <a href="indicateurs.html#val_ets">
+                <div class="header mb-3">
+                  <span class="mai-cash"></span>
+                </div>
+              </a>
+              <h5>Valeur comptable de l'entreprise  </h5>
+              <strong> <span id="Val_Ets"></span> €</strong>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6 col-lg-4 col-xl-3 py-3  wow zoomIn adjust-index">
+            <div class="features">
+              <a href="indicateurs.html#BFR">
+                <div class="header mb-3 btn-index">
+                    <span class="mai-people"></span>
+                </div>
+              </a>
+              <h5>Besoin en fonds de roulement</h5>
+              <strong> <span id="BFR"></span> €</strong>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 col-xl-3 py-3  wow zoomIn adjust-index">
+            <div class="features">
+              <a href="indicateurs.html#tx_vet">
+                <div class="header mb-3">
+                  <span class="mai-business"></span>
+                </div>
+              </a>
+              <h5>Taux de vétusté des immobilisations corporelles </h5>
+              <strong> <span id="Vet"></span> %</strong>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 col-xl-3 py-3  wow zoomIn adjust-index">
+            <div class="features">
+              <a href="indicateurs.html#End_net">
+                <div class="header mb-3">
+                  <span class="mai-calculator"></span>
+                </div></a>
+              <h5>Endettement net </h5>
+              <strong> <span id="End_Net"></span> €</strong>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 col-xl-3 py-3  wow zoomIn adjust-index">
+            <div class="features">
+              <a href="indicateurs.html#rés">
+                <div class="header mb-3">
+                  <span class="mai-bar-chart"></span>
+                </div>
+              </a>
+              <h5>Résultat net </h5>
+              <strong> <span id="Ben"></span> €</strong>
+            </div>
+          </div>
+        </div>
+        <div class="container text-center">
+          <a href="#doc" data-role="smoothscroll"><button type="button" class="btn btn-primary" style="align-items: center; margin-top: 50px;" >Qu'est ce que ça veut dire Doc ?</button></a>
+        </div>
+
+
+          </script>
+    </div> <!-- .container -->
+  </div> <!-- .page-section -->
+</form>
+
+<div class="page-section banner-seo-check" id="doc">
+  <div class="wrap bg-image" style="background-image: url(../assets/img/bg_pattern.svg);">
+    <div class="container">
+      <div class="row justify-content-center wow fadeInUp">
+        <div class="col-md-6 py-5 wow fadeInLeft" style="border-right-width: 200px;">
+          <img src="../assets/img/doctor3.png" alt="Image"> 
+        </div>
+        <div class="col-md-6 py-5">
+          <h2>Alors docteur ?</h2>
+              <p>1. Tout d'abord, il semblerait que votre entreprise ait générée pour cet exercice un résultat (bénéfice ou perte) après impôt de :  <strong><output id="id006"></output> €</strong> </p> <!--Valeur ets-->
+              <p>2. Votre entreprise dégage des ressources pour faire fonctionner son activité qui sont estimées à :  <strong><output id="id003"></output> €</strong> </p> <!--Bénéfice-->
+              <p>3. En comparaison, votre entreprise a besoin pour financer son activité de : <strong><output id="id001"></output> €</strong> </p> <!--FRNG-->
+              <p>4. Le taux de vieillissement des investissements physiques de l'entreprise est de : <strong><output id="id002"></output> %</strong> </p> <!--BFR-->
+              <p>5. L'endettement net de l'entreprise auprès de la banque et des associés est de : <strong><output id="id004"></output> €</strong></p> <!--Taux de vétusté-->
+              <p>6. Sa capacité à s'endetter vis-à-vis d'eux tout en restant solvable grâce à son activité est de :  <strong><output id="id005"></output> €</strong></p> <!--Endettement net-->
+              <p>7. Puis, si on regarde la capacité de l'entreprise à financer elle-même ses investissements par l'argent qu'elle dégage de son activité est évalué à : <strong><output id="id007"></output> €</strong></p> <!--Capacité d'endettement net-->
+              <p>8. Enfin, je vais vous donner une idée sur la valeur comptable de votre entreprise. Elle vaut la différence entre ce qu'elle possède et ce qu'elle doit : <strong><output id="id008"></output> €</strong></p> <!--CAF-->
+              
+              <p><strong>Et voilà ! En espérant vous revoir très vite dans mon cabinet !</strong></p>
+        </div>
+      
+      </div>
+    </div> <!-- .container -->
+  </div> <!-- .wrap -->
+</div> <!-- .page-section -->
+  <footer>
+    <div class="page-section banner-seo-check" style="height: 300px; color: #6C55F9">
+      <div class="wrap bg-color" style="padding: 10px;" >
+        <div class="container text-center">
+          <div class="row justify-content-left wow fadeInUp">
+            <div class="col-lg-3 py-3">
+              <h3>Informations</h3>
+              <p>Maurice analyse ma compta.fr vous propose une expérience novatrice pour avoir un diagnostic simple et rapide de votre bilan et compte de résultat. Les informations utilisées ne sont pas stockées conforme au RGPD.</p>
+            </div>
+            <div class="col-lg-3 py-3" >
+              <h5>Maurice analyse ma compta.fr</h5>
+              <ul class="footer-menu">
+                <li><a href="index.html">Cabinet</a></li>
+                <li><a href="about.html">Qui est Maurice ?</a></li>
+                <li><a href="indicateurs.html">Indicateurs</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 py-3" >
+                <h5>Autres informations</h5>
+                <ul class="footer-menu">
+                  <li><a href="contact.html">Contact</a></li>
+                  <li><a href="mentions légales.html">Mentions légales</a></li>
+                </ul>
+            </div>
+          </div>
+        </div>
+      <div class="container">
+        <p class="text-center" id="copyright">Copyright &copy; 2022. Maurice analyse ma compta.fr</a></p>
+      </div>
+  </footer>
+            <!--<form action="about.html">
+              
+              <!--<button type="submit" class="btn btn-success"> En savoir plus ! </button>
+            </form>
+          </div>
+        </div>
+      </div> <!-- .container -->
+    </div> <!-- .wrap -->
+  </div> <!-- .page-section -->
+<!--
+  <div class="page-section">
+    <div class="container">
+      <div class="text-center wow fadeInUp">
+        <div class="subhead">Pricing Plan</div>
+        <h2 class="title-section">Choose plan the right for you</h2>
+        <div class="divider mx-auto"></div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-lg-4 py-3 wow zoomIn">
+          <div class="card-pricing">
+            <div class="header">
+              <div class="pricing-type">Basic</div>
+              <div class="price">
+                <span class="dollar">$</span>
+                <h1>39<span class="suffix">.99</span></h1>
+              </div>
+              <h5>Per Month</h5>
+            </div>
+            <div class="body">
+              <p>25 Analytics <span class="suffix">Campaign</span></p>
+              <p>1,300 Change <span class="suffix">Keywords</span></p>
+              <p>Social Media <span class="suffix">Reviews</span></p>
+              <p>1 Free <span class="suffix">Optimization</span></p>
+              <p>24/7 <span class="suffix">Support</span></p>
+            </div>
+            <div class="footer">
+              <a href="#" class="btn btn-pricing btn-block">Subscribe</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 py-3 wow zoomIn">
+          <div class="card-pricing marked">
+            <div class="header">
+              <div class="pricing-type">Standar</div>
+              <div class="price">
+                <span class="dollar">$</span>
+                <h1>59<span class="suffix">.99</span></h1>
+              </div>
+              <h5>Per Month</h5>
+            </div>
+            <div class="body">
+              <p>25 Analytics <span class="suffix">Campaign</span></p>
+              <p>1,300 Change <span class="suffix">Keywords</span></p>
+              <p>Social Media <span class="suffix">Reviews</span></p>
+              <p>1 Free <span class="suffix">Optimization</span></p>
+              <p>24/7 <span class="suffix">Support</span></p>
+            </div>
+            <div class="footer">
+              <a href="#" class="btn btn-pricing btn-block">Subscribe</a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="col-lg-4 py-3 wow zoomIn">
+          <div class="card-pricing">
+            <div class="header">
+              <div class="pricing-type">Professional</div>
+              <div class="price">
+                <span class="dollar">$</span>
+                <h1>99<span class="suffix">.99</span></h1>
+              </div>
+              <h5>Per Month</h5>
+            </div>
+            <div class="body">
+              <p>25 Analytics <span class="suffix">Campaign</span></p>
+              <p>1,300 Change <span class="suffix">Keywords</span></p>
+              <p>Social Media <span class="suffix">Reviews</span></p>
+              <p>1 Free <span class="suffix">Optimization</span></p>
+              <p>24/7 <span class="suffix">Support</span></p>
+            </div>
+            <div class="footer">
+              <a href="#" class="btn btn-pricing btn-block">Subscribe</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div> <!-- .container -->
+  </div> <!-- .page-section -->
+
+  <!-- Banner info -->
+  <!-- <div class="page-section banner-info">
+    <div class="wrap bg-image" style="background-image: url(../assets/img/bg_pattern.svg);">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 py-3 pr-lg-5 wow fadeInUp">
+            <h2 class="title-section">SEO to Improve Brand <br> Visibility</h2>
+            <div class="divider"></div>
+            <p>We're an experienced and talented team of passionate consultants who breathe with search engine marketing.</p>
+            
+            <ul class="theme-list theme-list-light text-white">
+              <li>
+                <div class="h5">SEO Content Strategy</div>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</p>
+              </li>
+              <li>
+                <div class="h5">B2B SEO</div>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</p>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-6 py-3 wow fadeInRight">
+            <div class="img-fluid text-center">
+              <img src="../assets/img/banner_image_2.svg" alt="">
+            </div>
+          </div>
+        </div> 
+      </div>
+    </div> <!-- .wrap -->
+  </div> <!-- .page-section -->
+  <!-- Blog 
+  <div class="page-section">
+    <div class="container">
+      <div class="text-center wow fadeInUp">
+        <div class="subhead">Our Blog</div>
+        <h2 class="title-section">Read Latest News</h2>
+        <div class="divider mx-auto"></div>
+      </div>
+
+      <div class="row mt-5">
+        <div class="col-lg-4 py-3 wow fadeInUp">
+          <div class="card-blog">
+            <div class="header">
+              <div class="post-thumb">
+                <img src="../assets/img/blog/blog-1.jpg" alt="">
+              </div>
+            </div>
+            <div class="body">
+              <h5 class="post-title"><a href="#">Source of Content Inspiration</a></h5>
+              <div class="post-date">Posted on <a href="#">27 Jan 2020</a></div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-4 py-3 wow fadeInUp">
+          <div class="card-blog">
+            <div class="header">
+              <div class="post-thumb">
+                <img src="../assets/img/blog/blog-2.jpg" alt="">
+              </div>
+            </div>
+            <div class="body">
+              <h5 class="post-title"><a href="#">Source of Content Inspiration</a></h5>
+              <div class="post-date">Posted on <a href="#">27 Jan 2020</a></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 py-3 wow fadeInUp">
+          <div class="card-blog">
+            <div class="header">
+              <div class="post-thumb">
+                <img src="../assets/img/blog/blog-3.jpg" alt="">
+              </div>
+            </div>
+            <div class="body">
+              <h5 class="post-title"><a href="#">Source of Content Inspiration</a></h5>
+              <div class="post-date">Posted on <a href="#">27 Jan 2020</a></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 mt-4 text-center wow fadeInUp">
+          <a href="blog.html" class="btn btn-primary">View More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+-->
+  <!--<footer class="page-footer bg-image" style="background-image: url(../assets/img/world_pattern.svg);">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-lg-3 py-3">
+          <h3>Analyse-compta.fr</h3>
+          <p>Analyse-compta.fr vous propose une simulation simple et rapide du bilan comptable. Les informations utilisées ne sont pas stockées.</p>
+
+          <div class="social-media-button">
+            <a href="#"><span class="mai-logo-facebook-f"></span></a>
+            <a href="#"><span class="mai-logo-twitter"></span></a>
+            <a href="#"><span class="mai-logo-google-plus-g"></span></a>
+            <a href="#"><span class="mai-logo-instagram"></span></a>
+            <a href="#"><span class="mai-logo-linkedin"></span></a>
+          </div>
+        </div>
+        <div class="col-lg-3 py-3">
+          <h5>Company</h5>
+          <ul class="footer-menu">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Career</a></li>
+            <li><a href="#">Advertise</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Help & Support</a></li>
+          </ul>
+        </div>
+        <!-- <div class="col-lg-3 py-3">
+          <h5>Contact Us</h5>
+          <p>203 Fake St. Mountain View, San Francisco, California, USA</p>
+          <a href="#" class="footer-link">+00 1122 3344 5566</a>
+          <a href="#" class="footer-link">seogram@temporary.com</a>
+        </div>
+        <div class="col-lg-3 py-3">
+          <h5>Newsletter</h5>
+          <p>Get updates, news or events on your mail.</p>
+          <form action="#">
+            <input type="text" class="form-control" placeholder="Enter your email..">
+            <button type="submit" class="btn btn-success btn-block mt-2">Subscribe</button>
+          </form>
+        </div> -->
+      <!--</div>
+
+      <p class="text-center" id="copyright">Copyright &copy; 2022. Analyse Bilan comptable</a></p>
+    </div>
+  </footer>-->
+
+<script src="../assets/js/jquery-3.5.1.min.js"></script>
+
+<script src="../assets/js/bootstrap.bundle.min.js"></script>
+
+<script src="../assets/js/google-maps.js"></script>
+
+<script src="../assets/vendor/wow/wow.min.js"></script>
+
+<script src="../assets/js/theme.js"></script>
+  
+</body>
+</html>

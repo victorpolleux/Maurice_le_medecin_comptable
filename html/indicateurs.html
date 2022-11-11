@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <meta name="copyright" content="MACode ID, https://macodeid.com/">
+
+  <title>Maurice analyse ma compta.fr</title>
+
+  <link rel="stylesheet" href="../assets/css/maicons.css">
+
+  <link rel="stylesheet" href="../assets/css/bootstrap.css">
+
+  <link rel="stylesheet" href="../assets/vendor/animate/animate.css">
+
+  <link rel="stylesheet" href="../assets/css/theme.css">
+</head>
+<body>
+
+  <!-- Back to top button -->
+  <div class="back-to-top"></div>
+  
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky" data-offset="300">
+      
+      <div class="container">
+        <a href="index.html" class="navbar-brand">Maurice analyse <span class="text-primary"> ma compta.fr</span></a>
+
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="navbar-collapse collapse" style="margin-right: -100px;" id="navbarContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Cabinet</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">Qui est Maurice ?</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="indicateurs.html">Indicateurs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-primary ml-lg-2" href="index.html#about">Analyser </a>
+            </li>
+          </ul>
+          <div class="col-lg-4">       
+            <div class="widget-box">
+              <form action="#" class="search-widget">
+                  <input type="text" id="UserSearch" onkeyup="Recherche()" name="recherche" class="form-control" style="width: fit-content;" placeholder="Rechercher un mot-clé..">
+              </form>
+            </div>
+          </div>
+
+        </div>
+        
+      </div>
+
+    </nav>
+  </header>
+  <!--<div class="page-section pt-5"> -->
+  <!--
+    <nav style="margin-top: 150px;">
+        <ul class="summary" style="position:fixed; margin-left: -20px; padding-right: -50px; width: fit-content;">
+          <h4>Navigateur</h4>
+          <li class="nav-item" style="margin-left: -20px; padding-right: -30px;">
+            <a class="nav-link" href="#FRNG" data-role="smoothscroll">Fonds de roulement</br> net global</a>
+          </li>
+          <li class="nav-item" style="margin-left: -20px; padding-right: -30px;">
+            <a class="nav-link" href="#BFR" data-role="smoothscroll">Besoin en fonds</br> de roulement</a>
+          </li>
+          <li class="nav-item" style="margin-left: -20px; padding-right: -30px;">
+            <a class="nav-link" href="#cap_aut" data-role="smoothscroll">Capacité </br>d'autofinancement</a>
+          </li>
+          <li class="nav-item" style="margin-left: -20px; padding-right: -30px;">
+            <a class="nav-link" href="#tx_vet" data-role="smoothscroll">Taux de vétusté </br> des immobilisations </br>corporelles</a>
+          </li>
+          <li class="nav-item" style="margin-left: -20px; padding-right: -30px;">
+            <a class="nav-link" href="#cap_end" data-role="smoothscroll">Capacité</br> d'endettement</a>
+          </li>
+          <li class="nav-item" style="margin-left: -20px; padding-right: -30px;">
+            <a class="nav-link" href="#end_net"data-role="smoothscroll">Endettement net</a>
+          </li>
+          <li class="nav-item" style="margin-left: -20px; padding-right: -30px;">
+            <a class="nav-link" href="#rés"data-role="smoothscroll">Résultat net</a>
+          </li>
+          <li class="nav-item" style="margin-left: -20px; padding-right: -30px;">
+            <a class="nav-link" href="#val_ets"data-role="smoothscroll">Valeur comptable</br> de l'entreprise</a>
+          </li>
+        </ul>
+    </nav>
+  -->
+    <div class="container align-items-center" style="max-width: 1000px;">
+      <div class="row align-items-center">
+        <div class="col-lg-8">
+          <div class="blog-single-wrap" style="margin-right: -400px;">
+            <div class="header">
+              <div class="post-thumb">
+                <img src="../assets/img/chart1.jpg" alt="">
+              </div>
+              <div class="meta-header">
+                <div class="post-author">
+                  <div class="avatar">
+                    <img src="../assets/img/doctor-head.png" alt="">
+                  </div>
+                  par <a href="about.html">Maurice le médecin comptable</a>
+                </div>
+
+                <!--<div class="post-sharer">
+                  <a href="#" class="btn social-facebook"><span class="mai-logo-facebook-f"></span></a>
+                  <a href="#" class="btn social-twitter"><span class="mai-logo-twitter"></span></a>
+                  <a href="#" class="btn social-linkedin"><span class="mai-logo-linkedin"></span></a>
+                  <a href="#" class="btn"><span class="mai-mail"></span></a>
+                </div> -->
+              </div>
+            </div>
+
+            <h1 class="post-title">En savoir plus sur les indicateurs</h1>
+            <ul style="position:relative">
+              <li class="nav-item">
+                <a class="nav-link" href="#FRNG" data-role="smoothscroll">Fonds de roulement net global</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#BFR" data-role="smoothscroll">Besoin en fonds de roulement</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#cap_aut" data-role="smoothscroll">Capacité d'autofinancement</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#tx_vet" data-role="smoothscroll">Taux de vétusté des immobilisations corporelles</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#cap_end" data-role="smoothscroll">Capacité d'endettement</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#end_net"data-role="smoothscroll">Endettement net</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#rés"data-role="smoothscroll">Résultat net</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#val_ets"data-role="smoothscroll">Valeur comptable de l'entreprise</a>
+              </li>
+            </ul>
+
+            <div class="container">
+              <nav>
+                <ul class="summary" style="position:fixed; margin-left: -20px; padding-right: -50px; width: fit-content;">
+                  <h4>Navigateur</h4>
+                  <li class="nav-item" style="margin-left: -20px; padding-right: -30px;">
+                    <a class="nav-link" href="#FRNG" data-role="smoothscroll">Fonds de roulement</br> net global</a>
+                  </li>
+                  <li class="nav-item" style="margin-left: -20px; padding-right: -30px;">
+                    <a class="nav-link" href="#BFR" data-role="smoothscroll">Besoin en fonds</br> de roulement</a>
+                  </li>
+                  <li class="nav-item" style="margin-left: -20px; padding-right: -30px;">
+                    <a class="nav-link" href="#cap_aut" data-role="smoothscroll">Capacité </br>d'autofinancement</a>
+                  </li>
+                  <li class="nav-item" style="margin-left: -20px; padding-right: -30px;">
+                    <a class="nav-link" href="#tx_vet" data-role="smoothscroll">Taux de vétusté </br> des immobilisations </br>corporelles</a>
+                  </li>
+                  <li class="nav-item" style="margin-left: -20px; padding-right: -30px;">
+                    <a class="nav-link" href="#cap_end" data-role="smoothscroll">Capacité</br> d'endettement</a>
+                  </li>
+                  <li class="nav-item" style="margin-left: -20px; padding-right: -30px;">
+                    <a class="nav-link" href="#end_net"data-role="smoothscroll">Endettement net</a>
+                  </li>
+                  <li class="nav-item" style="margin-left: -20px; padding-right: -30px;">
+                    <a class="nav-link" href="#rés"data-role="smoothscroll">Résultat net</a>
+                  </li>
+                  <li class="nav-item" style="margin-left: -20px; padding-right: -30px;">
+                    <a class="nav-link" href="#val_ets"data-role="smoothscroll">Valeur comptable</br> de l'entreprise</a>
+                  </li>
+                </ul>
+            </nav>
+            </div>
+
+            <div class="row" style="margin-top: 100px;">
+              <div class="col-sm-6 col-lg-4 col-xl-3 py-3 wow zoomIn">
+                <div class="features recherche" style="margin-left: 130px;">
+                  <div class="header mb-3" >
+                      <span class="mai-rocket"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="features recherche" style="margin-top: 25px;">
+                <h2 id="FRNG">Fonds de roulement net global</h2>
+              </div>
+            </div>
+            <div class="post-content recherche">
+              <div class="recherche">
+                <p>Le fonds de roulement net global représente la différence entre les ressources financières dont vous disposez et la valeur de vos immobilisations.</p>
+                <p>C'est un indicateur que l'on obtient grâce aux données du bilan et du compte de résultat.</p>
+              </div>
+              <blockquote class="quote blog-index recherche">FRNG = Capital social + réserves + résultat net + dettes financières supérieures à 1 an + provisions pour risques et charges + amortissements des immobilisations - (immobilisations corporelles + immobilisations incorporelles + immobilisations financières)</blockquote>
+              
+              <h3>Interprétations</h3>
+              <div class="recherche">
+                <p>Si le FRNG est positif, cela signifie que l'entreprise arrive à couvrir le financement de ses investissements par son activité. Les ressources qu'elle dégage sont supérieures à la valeur de ses investissements.</p>
+                <p>Si le FRNG est négatif, cela signifie que l'entreprise n'arrive pas à couvrir le financement de ses investissements par son activité. Pour les financer elle doit avoir recours à des financements de court terme comme des emprunts ou des apports de la part des associés.</p>
+              </div>
+              <h3>Recommendation du médecin comptable</h3>
+              <div class="meta-header">
+                <div class="post-author">
+                <div class="avatar">
+                  <img src="../assets/img/doctor-head.png" alt="">
+                    <blockquote class="quote recherche"><i>"Le FRNG doit être positif ! L'entreprise doit être capable de soutenir ses investissements par son activité. Lorsque le BFR est positif le FRNG doit lui être supérieur car il le finance."</i> </blockquote>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row" style="margin-top: 100px;">
+              <div class="col-sm-6 col-lg-4 col-xl-3 py-3 wow zoomIn">
+                <div class="features recherche" style="margin-left: 130px;">
+                  <div class="header mb-3">
+                      <span class="mai-people"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="features recherche" style="margin-top: 25px;">
+                <h2 id="BFR">Besoin en fonds de roulement</h2>
+              </div>
+            </div>
+            <div class="post-content recherche" >
+              <div class="recherche">
+                <p>Le besoin en fonds de roulement représente le besoin de l'entreprise pour financer son activité. Il s'agit du décalage entre l'encaissement des créances clients, le niveau des stocks et le paiement des dettes. </p>
+                <p>C'est un indicateur que l'on obtient grâce aux données du bilan.</p>
+              </div>
+              <blockquote class="quote blog-index recherche">BFR = Créances clients + créances diverses + stocks - dettes fournisseurs - dépréciations</blockquote>
+              <h3>Interprétations</h3>
+              <div class="recherche">
+                <p>Si le BFR est positif, cela signifie que l'entreprise a un besoin de financer son activité. Elle paie d'abord ses fournisseurs puis encaisse ses clients.</p>
+                <p>Si le BFR est négatif, cela signifie que l'entreprise a une capacité de financement de son activité. Elle encaisse d'abord ses clients puis paie ses fournisseurs.</p>
+              </div>
+              <h3>Recommendation du médecin comptable</h3>
+              <div class="meta-header">
+               <div class="post-author">
+                <div class="avatar">
+                  <img src="../assets/img/doctor-head.png" alt="">
+                    <blockquote class="quote recherche"><i>"Le BFR négatif est la meilleure situation. Vous êtes en permanence en excès de trésorerie !" </i> </blockquote>
+                 </div>
+                </div>
+              </div>
+            </div>
+            <div class="row" style="margin-top: 100px;">
+              <div class="col-sm-6 col-lg-4 col-xl-3 py-3 wow zoomIn">
+                <div class="features recherche" style="margin-left: 130px;">
+                  <div class="header mb-3">
+                      <span class="mai-briefcase"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="features recherche" style="margin-top: 25px;">
+                <h2 id="cap_aut">Capacité d'autofinancement</h2>
+              </div>
+            </div>
+            <div class="post-content recherche">
+              <div class="recherche">
+                <p>Il s'agit de la capacité de l'entreprise a financer ses investissements par son activité. Cet indicateur montre les ressources financières qu'elle a été en mesure de créer. </p>
+              </div>
+              <blockquote class="quote blog-index recherche">CAF = Résultat net + Dotations aux amortissements - Reprises sur amortissements et dépréciations + (Valeur comptable des actifs cédés - Produits des cessions d'actifs) </blockquote>
+              <h3>Interprétations</h3>
+              <div class="recherche">
+                <p>Une CAF positive signifie que l'entreprise peut financer ses investissements par son activité à hauteur du montant. </p>
+                <p>Une CAF négative signifie que l'entreprise est incapable de financer ses investissements par son activité.</p>
+              </div>
+              <h3>Recommendation du médecin comptable</h3>
+              <div class="meta-header">
+              <div class="post-author">
+                <div class="avatar">
+                  <img src="../assets/img/doctor-head.png" alt="">
+                    <blockquote class="quote recherche"><i>"Il serait préférable d'avoir une CAF positive car cela permettrait à l'entreprise de ne pas avoir systhématiquement besoin de financer ses investissements par un emprunt."</i> </blockquote>
+                </div>
+                </div>
+              </div>
+          </div>
+            <div class="row" style="margin-top: 100px;">
+              <div class="col-sm-6 col-lg-4 col-xl-3 py-3 wow zoomIn">
+                <div class="features recherche" style="margin-left: 130px;">
+                  <div class="header mb-3">
+                      <span class="mai-business"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="features recherche" style="margin-top: 25px;">
+                <h2 id="tx_vet">Taux de vétusté des immobilisations corporelles</h2>
+              </div>
+            </div>
+            <div class="post-content recherche">
+              <div class="recherche">
+                <p>Comme son nom l'indique ce taux mesure la vétusté de vos immobilisations corporelles. Il s'agit d'un rapport entre la valeur actuelle comptable des biens et la valeur à laquelle ils ont été acquis. </p>
+              </div>
+              <blockquote class="quote blog-index recherche">Taux de vétusté = (Immobilisations net / Immobilisations brut - 1 ) x 100</blockquote>
+              <h3>Interprétations</h3>
+              <div class="recherche">
+                <p>Plus le pourcentage est proche de 0% plus les investissements et biens matériels ont été acquis récemment.</p>
+                <p>Plus le pourcentage est proche de 100% plus les investissements et les biens matériels ont été consommés et sont vétustes.</p>
+              </div>
+              <h3>Recommendation du médecin comptable</h3>
+              <div class="meta-header">
+              <div class="post-author">
+                <div class="avatar">
+                  <img src="../assets/img/doctor-head.png" alt="">
+                    <blockquote class="quote recherche"><i>"Avoir un taux de vétusté suffisamment bas signifie que l'entreprise dispose d'investissements et de biens matériels suffisamment neufs pour qu'ils soient opérationnels pour l'activité de l'entreprise. Plus un bien est vétuste plus il demande de l'entretien et devient par la même occasion moins productif."</i> </blockquote>
+                </div>
+                </div>
+              </div>
+            </div>
+          <div class="row" style="margin-top: 100px;">
+            <div class="col-sm-6 col-lg-4 col-xl-3 py-3 wow zoomIn">
+              <div class="features recherche" style="margin-left: 130px;">
+                <div class="header mb-3">
+                    <span class="mai-battery-half"></span>
+                </div>
+              </div>
+            </div>
+            <div class="features recherche" style="margin-top: 25px;">
+              <h2 id="cap_end">Capacité d'endettement</h2>
+            </div>
+          </div>
+          <div class="post-content recherche">
+            <div class="recherche">
+              <p>La capacité d'endettement d'une entreprise évalue le montant restant que l'entreprise peut emprunter sans compromettre sa solvabilité. </p>
+            </div>
+            <blockquote class="quote blog-index recherche">Capacité d'endettement = valeur comptable de l'entreprise - <a style="color:aliceblue" href="#end_net">endettement net</a> </blockquote>
+            <h3>Interprétations</h3>
+            <div class="recherche">
+              <p>Une capacité d'endettement positive exprime la possibilité pour l'entreprise d'avoir de nouveau recours à un emprunt pour se financer.</p>
+              <p>Une capacité d'endettement négative signifie que les dettes sont supérieures à la valeur comptable de l'entreprise. C'est dangereux pour la viabilité de l'entreprise car elle risque à termes un surendettement.</p>
+            </div>
+            <h3>Recommendation du médecin comptable</h3>
+            <div class="meta-header">
+              <div class="post-author">
+              <div class="avatar">
+                <img src="../assets/img/doctor-head.png" alt="">
+                  <blockquote class="quote recherche"><i>"Attention à ne pas être dans une capacité d'endettement négatif car cela pourrait dire que l'entreprise n'est pas capable de rembourser ses emprunts" </i></blockquote>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row" style="margin-top: 100px;">
+            <div class="col-sm-6 col-lg-4 col-xl-3 py-3 wow zoomIn">
+              <div class="features recherche" style="margin-left: 130px;">
+                <div class="header mb-3">
+                    <span class="mai-calculator"></span>
+                </div>
+              </div>
+            </div>
+            <div class="features recherche" style="margin-top: 25px;">
+              <h2 id="end_net">Endettement net</h2>
+            </div>
+          </div>
+          <div class="post-content recherche">
+            <div class="recherche">
+              <p> L'endettement net correspond à la différence entre les emprunts sur le long terme et l'argent disponible de l'entreprise. On parle bien ici de dettes sur le long terme c'est-à-dire celles supérieures à 1 an. On ne prend pas en compte les dettes de court terme comme celles auprès des fournisseurs ou des organismes publiques. </p>
+            </div>
+            <blockquote class="quote blog-index recherche">Endettement net = Emprunts bancaires + comptes courants d'associés - disponibilités - valeurs mobilières de placement(placements financiers) </blockquote>
+            <h3>Interprétations</h3>
+            <div class="recherche">
+              <p>Un endettement net positif représente le montant de l'endettement sur le long terme de l'entreprise.</p>
+              <p>Un endettement net négatif est une situation très confortable pour l'entreprise car elle détient plus d'argent disponible que de dettes </p>
+            </div>
+            <h3>Recommendation du médecin comptable</h3>
+            <div class="meta-header">
+            <div class="post-author">
+              <div class="avatar">
+                <img src="../assets/img/doctor-head.png" alt="">
+                  <blockquote class="quote recherche"><i>"Avoir un endettement net positif n'est pas forcément une mauvaise chose ! On peut supposer que le recours aux emprunts a permis à l'entreprise de financer des investissements. Il faut tout de même veiller à ce que l'entreprise ne se retrouve pas dans une situation de surendettement. "</i> </blockquote>
+              </div>
+              </div>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 100px;">
+          <div class="col-sm-6 col-lg-4 col-xl-3 py-3 wow zoomIn">
+            <div class="features recherche" style="margin-left: 130px;">
+              <div class="header mb-3">
+                  <span class="mai-bar-chart"></span>
+              </div>
+            </div>
+          </div>
+          <div class="features recherche" style="margin-top: 25px;">
+            <h2 id="rés">Résultat net</h2>
+          </div>
+        </div>
+        <div class="post-content recherche">
+          <div class="recherche">
+            <p>Le résultat net de correspond aux bénéfices ou aux pertes de l'entreprise après impôt à la clôture de l'exercice. Il s'agit de la différence entre les produits et les charges c'est-à-dire entre les ressources définitivement acquises par l'entreprise et celles qui ont été consommées par l'entreprise. </p>
+            <p>Les produits enrichissent le patrimoine de l'entreprise tandis que les charges l'appauvrissent.</p>
+          </div>
+          <blockquote class="quote blog-index recherche">Résultat net = (Somme des produits - Somme des charges) - impôts </blockquote>
+          <h3>Interprétations</h3>
+          <div class="recherche">
+            <p>Un résultat positif indique que l'entreprise a réalisée un bénéfice. Elle a eu plus de produits que de charges. <strong>Elle s'est enrichie.</strong></p>
+            <p>Un résultat négatif indique que l'entreprise a réalisée une perte. Elle a eu moins de produits que de charges. <strong>Elle s'est appauvrie.</strong></p>
+          </div>
+          <h3>Recommendation du médecin comptable</h3>
+          <div class="meta-header">
+            <div class="post-author">
+            <div class="avatar">
+              <img src="../assets/img/doctor-head.png" alt="">
+                <blockquote class="quote recherche"><i>"L'entreprise doit avoir un résultat net positif dès que possible ! Cela permet de l'enrichir et de garantir la pérennité de son activité." </i> </blockquote>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row" style="margin-top: 100px;">
+          <div class="col-sm-6 col-lg-4 col-xl-3 py-3 wow zoomIn">
+            <div class="features recherche" style="margin-left: 130px;">
+              <div class="header mb-3">
+                  <span class="mai-cash"></span>
+              </div>
+            </div>
+          </div>
+          <div class="features recherche" style="margin-top: 25px;">
+            <h2 id="val_ets">Valeur comptable de l'entreprise</h2>
+          </div>
+        </div>
+        <div class="post-content recherche">
+          <div class="recherche">
+            <p>Pour savoir combien est valorisée comptablement une entreprise il faut faire la différence entre ce qu'elle possède et ce qu'elle doit. </p>
+            <p>Dans le bilan, il s'agit de l'écart entre l'actif et les dettes. La valeur correspond à celle des capitaux propres.</p>
+          </div>
+          <blockquote class="quote blog-index recherche">Valeur comptable de l'entreprise = Capital social + réserves + résultat net</blockquote>
+          <h3>Interprétations</h3>
+          <div class="recherche">
+            <p>Une valeur comptable positive illustre la valorisation comptable de l'entreprise.</p>
+            <p>Une valeur comptable négative est un très mauvais signe car cela veut dire que l'entreprise a plus de dettes que d'actif. Il y a un risque de dépôt de bilan. </p>
+          </div>
+          <h3>Recommendation du médecin comptable</h3>
+          <div class="meta-header">
+            <div class="post-author">
+            <div class="avatar">
+              <img src="../assets/img/doctor-head.png" alt="">
+                <blockquote class="quote recherche"><i>"Une entreprise vaut comptablement la différence entre ce qu'elle possède et ce qu'elle doit. Il s'agit des capitaux propres.  Mais attention même si les capitaux propres sont positifs s'ils sont inférieurs à la moitié du capital social l'entreprise risque la dissolution.  "</i> </blockquote>
+              </div>
+            </div>
+          </div>
+    </div>
+<!--
+          <div class="comment-form-wrap pt-5">
+            <h2 class="mb-5">Leave a comment</h2>
+            <form action="#" class="">
+              <div class="form-row form-group">
+                <div class="col-md-6">
+                  <label for="name">Name *</label>
+                  <input type="text" class="form-control" id="name">
+                </div>
+                <div class="col-md-6">
+                  <label for="email">Email *</label>
+                  <input type="email" class="form-control" id="email">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="website">Website</label>
+                <input type="url" class="form-control" id="website">
+              </div>
+  
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea name="msg" id="message" cols="30" rows="8" class="form-control"></textarea>
+              </div>
+              <div class="form-group">
+                <input type="submit" value="Post Comment" class="btn btn-primary">
+              </div>
+  
+            </form>
+          </div>
+
+        </div>
+        <div class="col-lg-4">
+          <div class="widget">
+
+
+            <!-- Widget Categories -->
+            <!--<div class="widget-box">
+              <h4 class="widget-title">Category</h4>
+              <div class="divider"></div>
+
+              <ul class="categories">
+                <li><a href="#">LifeStyle</a></li>
+                <li><a href="#">Food</a></li>
+                <li><a href="#">Healthy</a></li>
+                <li><a href="#">Sports</a></li>
+                <li><a href="#">Entertainment</a></li>
+              </ul>
+            </div>
+
+            <!-- Widget recent post 
+            <div class="widget-box">
+              <h4 class="widget-title">Recent Post</h4>
+              <div class="divider"></div>
+
+              <div class="blog-item">
+                  <a class="post-thumb" href="">
+                    <img src="../assets/img/blog/blog-1.jpg" alt="">
+                  </a>
+                  <div class="content">
+                    <h6 class="post-title"><a href="#">Even the all-powerful Pointing has no control</a></h6>
+                    <div class="meta">
+                      <a href="#"><span class="mai-calendar"></span> July 12, 2018</a>
+                      <a href="#"><span class="mai-person"></span> Admin</a>
+                      <a href="#"><span class="mai-chatbubbles"></span> 19</a>
+                    </div>
+                  </div>
+              </div>
+
+              <div class="blog-item">
+                  <a class="post-thumb" href="">
+                    <img src="../assets/img/blog/blog-2.jpg" alt="">
+                  </a>
+                  <div class="content">
+                    <h6 class="post-title"><a href="#">Even the all-powerful Pointing has no control</a></h6>
+                    <div class="meta">
+                      <a href="#"><span class="mai-calendar"></span> July 12, 2018</a>
+                      <a href="#"><span class="mai-person"></span> Admin</a>
+                      <a href="#"><span class="mai-chatbubbles"></span> 19</a>
+                    </div>
+                  </div>
+              </div>
+
+              <div class="blog-item">
+                  <a class="post-thumb" href="">
+                    <img src="../assets/img/blog/blog-3.jpg" alt="">
+                  </a>
+                  <div class="content">
+                    <h6 class="post-title"><a href="#">Even the all-powerful Pointing has no control</a></h6>
+                    <div class="meta">
+                      <a href="#"><span class="mai-calendar"></span> July 12, 2018</a>
+                      <a href="#"><span class="mai-person"></span> Admin</a>
+                      <a href="#"><span class="mai-chatbubbles"></span> 19</a>
+                    </div>
+                  </div>
+              </div>
+
+            </div>
+
+            <!-- Widget Tag Cloud 
+            <div class="widget-box">
+              <h4 class="widget-title">Tag Cloud</h4>
+              <div class="divider"></div>
+
+              <div class="tag-clouds">
+                <a href="#" class="tag-cloud-link">Projects</a>
+                <a href="#" class="tag-cloud-link">Design</a>
+                <a href="#" class="tag-cloud-link">Travel</a>
+                <a href="#" class="tag-cloud-link">Brand</a>
+                <a href="#" class="tag-cloud-link">Trending</a>
+                <a href="#" class="tag-cloud-link">Knowledge</a>
+                <a href="#" class="tag-cloud-link">Food</a>
+              </div>
+            </div> -->
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+    <footer>
+      <div class="page-section banner-seo-check" style="height: 300px; color: #6C55F9">
+        <div class="wrap bg-color" style="padding: 10px;" >
+          <div class="container text-center">
+            <div class="row justify-content-left wow fadeInUp">
+              <div class="col-lg-3 py-3">
+                <h3>Informations</h3>
+                <p>Maurice analyse ma compta.fr vous propose une expérience novatrice pour avoir un diagnostic simple et rapide de votre bilan et compte de résultat. Les informations utilisées ne sont pas stockées conforme au RGPD.</p>
+              </div>
+              <div class="col-lg-3 py-3" >
+                <h5>Maurice analyse ma compta.fr</h5>
+                <ul class="footer-menu">
+                  <li><a href="index.html">Cabinet</a></li>
+                  <li><a href="about.html">Qui est Maurice ?</a></li>
+                  <li><a href="indicateurs.html">Indicateurs</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-3 py-3" >
+                  <h5>Autres informations</h5>
+                  <ul class="footer-menu">
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="mentions légales.html">Mentions légales</a></li>
+                  </ul>
+              </div>
+            </div>
+          </div>
+        <div class="container">
+          <p class="text-center" id="copyright">Copyright &copy; 2022. Maurice analyse ma compta.fr</a></p>
+        </div>
+    </footer>
+
+<script src="../assets/js/jquery-3.5.1.min.js"></script>
+
+<script src="../assets/js/bootstrap.bundle.min.js"></script>
+
+<script src="../assets/js/google-maps.js"></script>
+
+<script src="../assets/vendor/wow/wow.min.js"></script>
+
+<script src="../assets/js/theme.js"></script>
+
+</body>
+</html>
